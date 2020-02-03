@@ -1,0 +1,99 @@
+.groupRateCalculator {
+  font-size: 16px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.groupRateCalculator .slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 84%;
+  height: 10px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+.groupRateCalculator .slider:hover {
+  opacity: 1;
+}
+
+.groupRateCalculator .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background: url(assets/person_icon.png);
+  cursor: pointer;
+}
+
+.groupRateCalculator .slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background: url(assets/person_icon.png);
+  cursor: pointer;
+}
+
+.groupRateCalculator #groupSizeInput {
+  width: 20px;
+  border-radius: 8px;
+  margin-left: 5px;
+  padding: 4px;
+  outline: none;
+}
+
+.groupRateCalculator .question {
+  margin-top: 30px;
+  display: block;
+}
+
+.groupRateCalculator .question:first-child {
+    margin-top: 0px;
+}
+
+.groupRateCalculator .subquestion {
+  margin-top: 10px;
+  display: block;
+}
+
+.groupRateCalculator input {
+  padding: 0 0 0 0;
+}
+
+.groupRateCalculator label {
+  font-weight: bold;
+  display: block;
+  padding: 0px 0 14px 0;
+}
+
+.groupRateCalculator .inputBlock {
+  display: block;
+  margin-left: 10px;
+  line-height: 1.6em;
+}
+
+.groupRateCalculator #locationFeeDisclaimer {
+  font-size: 12px;
+  color: #666;
+  margin: 10px 0 0 0;
+}
+
+.groupRateCalculator #calculatorResult {
+  display: block;
+  width: 100%;
+  margin: 30px 0 0 0;
+  border-top: 1px dashed black;
+  padding-top: 15px;
+}
+
+.groupRateCalculator #perPersonCost,
+.groupRateCalculator #totalCost {
+  font-weight: bold;
+  font-size: 18px;
+}
